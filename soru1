@@ -1,1 +1,19 @@
+package odev;
+import java.util.*;
+public class soru1 {
+
+		public static void main(String[] args) {
+			int tplm=0;
+			int girilen=0;
+			while(girilen!=15)
+			{
+				System.out.println("Sayı giriniz.");
+				Scanner scan=new Scanner(System.in);
+				 girilen=scan.nextInt();
+				tplm=tplm+girilen;
+			}
+			System.out.println("Sonuç="+tplm);
+		}
+			
+	}
 
