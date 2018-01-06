@@ -1,0 +1,25 @@
+package ornek;
+import java.util.Random;
+public class Soru27 {
+	public static void main(String[] args) {
+		int rast=0;
+		int cift = 0,tek=0;
+		while(rast!=175)
+		{
+		Random r=new Random();
+		rast=r.nextInt(150)+150;
+		if(rast%2==0)
+		{
+		System.out.print(rast+"-");
+		cift++;		
+		}
+		if(rast%2==1)
+		{
+			System.out.print(rast+"-");
+			tek++;
+		}	
+		}		
+		System.out.println("\n"+"Çift sayı -> "+cift);
+		System.out.println("Tek sayı -> "+tek);
+		}
+}
