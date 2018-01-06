@@ -1,0 +1,15 @@
+package ornek;
+import java.util.*;
+public class soru11 {
+
+	public static void main(String[] args) {
+		System.out.println("Cümle Giriniz ->");
+		Scanner giris=new Scanner(System.in);
+		String cumle=giris.nextLine();
+		System.out.println("Yazılan cümle -> "+cumle);
+		String buyukcumle=cumle.toUpperCase();
+		System.out.println("Büyük harflerle cümle -> "+buyukcumle);
+
+	}
+
+}
