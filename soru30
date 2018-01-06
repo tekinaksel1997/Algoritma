@@ -1,0 +1,12 @@
+package ornek;
+import java.util.*;
+public class Soru30 {
+
+	public static void main(String[] args) {
+		System.out.println("Cümleyi girin : ");
+		Scanner cumle=new Scanner(System.in);
+		String grln=cumle.nextLine();
+		System.out.println("Harf sayısı="+grln.length());
+	}
+
+}
