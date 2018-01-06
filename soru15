@@ -1,0 +1,16 @@
+package ornek;
+import java.util.*;
+public class soru15 {
+
+	public static void main(String[] args) {
+		System.out.println("Cümle girin -> ");
+		Scanner giris=new Scanner(System.in);
+		String cumle=giris.nextLine();
+		for (int i =cumle.length()-1; i >=0; i--) 
+		{
+		System.out.print(cumle.charAt(i)); 
+		}
+
+	}
+
+}
