@@ -1,0 +1,46 @@
+package ornek;
+import javax.swing.JOptionPane;
+public class Soru26 {
+	public static void main(String[] args) {
+		int tplm = 0;
+        int dizi[] = new int[5]; 
+        for(int i=0; i<dizi.length; i++) 
+        {
+            dizi[i] = Integer.valueOf(JOptionPane.showInputDialog("Bir sayı giriniz " + (i+1)));
+            System.out.print(dizi[i] + " ");
+            tplm += dizi[i];
+        } 
+        System.out.println("Toplam : " + tplm);
+        System.out.println("Ortalama : " + (tplm/5));
+         
+        int max = dizi[0];
+        int min = dizi[0];
+         
+        for(int i=0; i<dizi.length; i++)
+        {
+            if(max < dizi[i])
+            {
+                max = dizi[i];
+            }
+             
+            if(min > dizi[i])
+            {
+                min = dizi[i];
+            }
+        }
+        System.out.println("En büyük sayı : " + max);
+        System.out.println("En küçük sayı : " + min);     
+        int fark = Math.abs((tplm/5) - dizi[0]); 
+        int yedek = 0; 
+        int enyakinsayi = 0; 
+        for (int i = 0; i < dizi.length; i++) 
+         { 
+             yedek = Math.abs((tplm/59) - dizi[i]); 
+             if (yedek < fark) 
+             { 
+               fark = yedek; 
+               enyakinsayi = dizi[i]; 
+             } 
+         } 
+	}
+}
