@@ -1,0 +1,23 @@
+package ornek;
+import java.util.*;
+public class soru10 {
+
+	public static void main(String[] args) {
+		Scanner grs=new Scanner(System.in);
+		System.out.println("Üç basamaklı sayı giriniz -> ");
+		int sayi=grs.nextInt();
+		int son=sayi%10;
+		int i=sayi/10;
+		int ortanca=i%10;
+		int tekrakamacevir=i/10;
+		int ilk=tekrakamacevir%10;
+		int tplm=son+ortanca+ilk;
+		int carp=son*ortanca*ilk;
+		int sonuc=carp/tplm;
+		System.out.println("Rakamların toplamı -> "+ilk+" * "+ortanca+" * "+son+" = "+carp);
+		System.out.println("Rakamların toplamı ->"+ilk+" + "+ortanca+" + "+son+" = "+tplm);
+		System.out.println("Sonuç ->"+carp+" / "+tplm+" = "+sonuc);
+
+	}
+
+}
