@@ -1,0 +1,17 @@
+package odev;
+public class soru6 {
+	public static void main(String[] args) {
+		int tplm=0;
+		for(int i=1; i<1000; i++)
+		{
+			if(i%5==0 && i%7==1)
+			{
+				System.out.print(" "+i);
+				tplm=tplm+i;
+			}
+		}
+		System.out.println();
+		System.out.println("Toplam : "+tplm);
+	}
+
+}
