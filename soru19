@@ -2,7 +2,7 @@ package ornek;
 public class soru19 {
 
 	public static void main(String[] args) {
-		int[]dizi={15,85,96,32,4,78};
+		int[]dizi={43,54,34,54,34,23};
 		int max=dizi[0];
         for(int t=1;t<dizi.length;t++)
         {
