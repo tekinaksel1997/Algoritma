@@ -1,0 +1,17 @@
+package ornek;
+public class soru19 {
+
+	public static void main(String[] args) {
+		int[]dizi={15,85,96,32,4,78};
+		int max=dizi[0];
+        for(int t=1;t<dizi.length;t++)
+        {
+        	if(dizi[t]>max)
+        {
+        max=dizi[t];
+		
+        }
+        }
+        System.out.println(max);
+	}
+}
