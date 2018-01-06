@@ -1,0 +1,18 @@
+package odev;
+import java.util.Scanner;
+public class soru5 {
+
+		public static void main(String[] args) {
+		System.out.println("Kac kez yazılsın -> ");
+		Scanner scan=new Scanner(System.in);
+		int adt=scan.nextInt();
+		System.out.println("Ne yazılsın -> ");
+		Scanner sca=new Scanner(System.in);
+		String st=sca.nextLine();
+		for(int i=0; i<adt; i++)
+		{ 
+			System.out.println(st);
+		}
+	}
+
+}
