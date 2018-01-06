@@ -1,0 +1,38 @@
+package odev;
+import java.util.Scanner;
+public class soru7 {
+
+	public static void main(String[] args) {
+		int sayi,i=1,j=1;
+	    Scanner grs = new Scanner (System.in);
+	    System.out.println("Sayi Girin :");
+	    sayi = grs.nextInt();
+	    while (sayi/i>9)
+	    { 
+	    	i=i*10;         
+	    	j++;         
+	    } 
+	    if(j<=4)
+	    {
+	    	 int bln;
+	         int bolen; 
+	         boolean asal=true;
+	         for(bln=2;bln<sayi;bln++){
+	             if((sayi%bln)==0){
+	             for(bolen=2;bolen<bln;bolen++){
+	                 if((bln%bolen)==0){
+	                     bolen=bolen+bln;
+	                     asal=false;
+	                 }
+	             }
+	             if(asal==true)
+	                 System.out.print(bln+" ");
+	             }
+	         }
+	    }
+	    else
+	    {
+	    	System.out.println("En fazla 4 basamaklı bir sayı girin : ");
+	    }
+	}
+}
