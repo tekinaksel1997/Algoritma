@@ -1,0 +1,18 @@
+package ornek;
+import java.util.*;
+public class soru9 {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Bir sayı girin -> ");
+		int rkm=scan.nextInt();
+		if(rkm%2==0)
+		{
+			System.out.println("Girilen sayı çifttir -> "+rkm);
+		}
+		else
+			System.out.println("Girilen sayı tektir -> "+rkm);
+
+	}
+
+}
