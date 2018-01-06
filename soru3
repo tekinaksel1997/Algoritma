@@ -1,0 +1,17 @@
+package odev;
+public class soru3 {
+	public static void main(String[] args) {
+		int tplm=0;
+		System.out.println("Sayılar ->");
+		for(int t=45; t<=225; t++)
+		{
+			if(t%7==0 && t%2==0)
+			{
+				System.out.println(t+" ");
+				tplm=tplm+t;
+			}
+		}
+		System.out.println("Toplam ="+tplm);
+	}
+
+}
