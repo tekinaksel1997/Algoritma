@@ -1,4 +1,4 @@
-package odev;
+package ornek;
 public class soru3 {
 	public static void main(String[] args) {
 		int tplm=0;
