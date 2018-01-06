@@ -1,0 +1,24 @@
+package ornek;
+import java.util.*;
+public class Soru33 {
+
+	public static void main(String[] args) {
+		System.out.println("Bir Sayı Giriniz");
+		Scanner scan=new Scanner(System.in);
+		int sayi=scan.nextInt();
+		if(sayi<50)
+		{
+			double sonuc=(double)sayi*0.25;
+			System.out.print("Sayının %25'i -> "+sonuc);
+				
+		}
+		else
+		{
+			double sonuc=(double)sayi*0.10;
+			System.out.print("Sayının %10'u ->"+sonuc);
+		}
+		
+
+	}
+
+}
