@@ -1,0 +1,45 @@
+package ornek;
+import java.util.*;
+import java.util.Random;
+public class soru22 {
+
+	public static void main(String[] args) {
+		Random rndm=new Random();
+		double tutulan=rndm.nextInt(100);
+		int hak=1;
+		while(hak<=10)
+		{
+			Scanner scan=new Scanner(System.in);
+			System.out.println("Bir sayı girin :");
+			double girilen=scan.nextDouble();
+			int x=100;
+			if(girilen>x) 
+			{ 
+				System.out.println("Girdiğiniz sayı 100 den büyük olmalı :");
+			}
+			else if(girilen>tutulan)
+			{
+				System.out.println("Girdiğini sayı tutulan sayıdan büyük :");
+				hak++;
+			}
+			else if(girilen<tutulan)
+			{
+				System.out.println("Girdiğiniz sayı tutulan sayıdan küçük");
+			}
+			else if(girilen==tutulan)
+			{
+				System.out.println("Tebrikler sayıyı buldun :");
+				System.out.println("Rastgele  "+tutulan);
+				break;
+			}
+			if(hak==10) 
+			{
+				System.out.println("Hakkınız bitmiştir.");
+				break;
+			}
+			
+		}
+
+	} 
+
+}
