@@ -1,0 +1,16 @@
+package ornek;
+import java.util.*;
+public class Soru35 {
+	public static void main(String[] args) {
+		int sayi,x=1,y=1;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Sayı girin : ");
+		sayi = scan.nextInt();
+		while (sayi/x>9)
+		{  
+		  x=x*10;  
+		  y++;        
+		}  
+		   System.out.println(y+" Basamaklı");        
+	}
+}
