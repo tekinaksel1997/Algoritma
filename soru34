@@ -1,0 +1,18 @@
+package ornek;
+import java.util.*;
+public class Soru34 {
+	public static void main(String[] args) {
+		System.out.println("Üslü sayılar için a =");
+		Scanner giris=new Scanner(System.in);
+		int a=giris.nextInt();
+		System.out.println("Üslü sayılar için b =");
+		Scanner giris2=new Scanner(System.in);
+		int b=giris2.nextInt();
+		int sonuc=1;
+		for(int i=b;i>0;i--)
+		{
+			sonuc=sonuc*a;
+		}
+		System.out.println(sonuc);
+	}
+}
