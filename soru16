@@ -1,0 +1,16 @@
+package ornek;
+import java.util.*;
+public class soru16 {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Metin girin -> ");
+		String mtn=scan.nextLine();
+		String ayirma=" ";
+		StringTokenizer ayir=new StringTokenizer(mtn,ayirma);
+		while(ayir.hasMoreTokens()){
+			System.out.println(ayir.nextToken());
+	}
+
+}
+}
