@@ -1,0 +1,22 @@
+package odev;
+import java.util.Scanner;
+public class soru4 {
+
+	public static void main(String[] args) {
+			System.out.println("Üç basamaklı sayı gir:");
+			Scanner scan=new Scanner(System.in);
+			int t=scan.nextInt();
+			int son=t%10;
+			int ikirakamacevir=t/10;
+			int orta=ikirakamacevir%10;
+			int tekrakamacevir=ikirakamacevir/10;
+			int ilk=tekrakamacevir%10;
+			int tplm=son+orta+ilk;
+			int carp=son*orta*ilk;
+			int s=carp/tplm;
+			
+			System.out.println("Rakamların çarpımı ->" +ilk+" * "+orta+" * "+son+" = "+carp);
+			System.out.println("Rakamların toplamı -> " +ilk+" + "+orta+" + "+son+" = "+tplm);
+			System.out.println("Sonuç -> " +carp+" / "+tplm+" = "+s);
+		}
+	}
